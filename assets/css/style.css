@@ -1,0 +1,12 @@
+.nav-design{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #425664;
+    z-index: 99;
+}
+
+.active-btn{
+    background-color: #FF6864 !important;
+    color: black !important;
+}

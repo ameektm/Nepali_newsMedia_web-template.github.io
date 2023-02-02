@@ -1,0 +1,83 @@
+.news-detail{
+    .banner-ad{
+        margin: 10px 0;
+        img{
+            margin: 10px 0;
+        }
+    }
+    .news-content{
+        margin: 20px 0;
+        .news-title{
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            .social{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        margin: 0 10px;
+                    }
+                }
+                #st-1{
+                    z-index: 0;
+                }
+            }
+        }
+        .sidebarNews{
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            p{
+                margin-left: 10px;
+            }
+        }
+        .latest-update, .most-view{
+            margin-top: 10px; 
+        }
+    }
+    .faebook-comment{
+        margin: 20px 0;
+    }
+    .reply-section{
+        .form-wrap{
+            padding: 20px;
+            .info-text{
+                margin: 10px 0;
+                text-align: center;
+                p{
+                    span{
+                        color: $primaryColor;
+                        padding: 0 8px;
+                        background: $secondaryColor;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            form{
+                .post-btn{
+                    border: none;
+                    background-color: $primaryColor;
+                    padding: 10px 0;
+                    color: white;
+                    width: 30%;
+                    margin: auto;
+                    margin-top: 20px;
+                    transition: 0.2s ease-in-out;
+                    &:hover{
+                        background-color: $secondaryColor;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .related-post{
+        margin: 20px 0 10px 0;
+    }
+}

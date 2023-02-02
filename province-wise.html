@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/scss/style.css">
+        <title>News-app</title>
+    </head>
+<body>
+    <!-- header starts -->
+    <header>
+        <div class="top-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="wrap-date">
+                            <p>आइतबार २६ मंसिर, २०७८</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="wrap-search">
+                            <input type="text" placeholder="खोज्नुहोस" alt="माफ गर्नुहोस तपाइले खोजेको नतिजा हामीले फेला पार्न सकेनौ">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="wrap-social">
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-id">
+            <div class="mid-section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="wrap-logo text-center">
+                            <a href="/"> <img src="./assets/img/logo.png" width="180" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-sm-6 col-6">
+                        <div class="wrap-toggler" style="display: none;">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                              
+                            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                        <i class="fa fa-bars me-2"></i>मेनु 
+                                    </h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul>
+                                        <li>
+                                            <a href="" class="nav-link"><i class="fa fa-home"></i>
+                                                गृहपृष्ठ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">समाचार</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">राजनीति</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                प्रदेश
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">प्रदेश १</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश २</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश ३</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश ४</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश ५</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश ६</a></li>
+                                                <li><a class="dropdown-item" href="#">प्रदेश ७</a></li>
+                                              </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">बिजनेश पाटी</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">मनोरन्जन</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">विचार</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">प्रवास</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                थप
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                              </ul>
+                                        </li>
+                                        <!-- <li class="nav-right">
+                                            <a href="#" class="nav-link">
+                                                डोनेशन<i class="fa fa-heart ms-1"></i>
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="wrap-ad text-center">
+                            <a href="">
+                                <img src="./assets/img/ad-top.gif" class="img-fluid" alt="Ad">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="wrap-bottom">
+                    <ul>
+                        <li>
+                            <a href="/"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">समाचार</a>
+                        </li>
+                        <li>
+                            <a href="#">राजनीति</a>
+                        </li>
+                        <li class="others">
+                            <a href="" class="dropbtn" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                प्रदेश <i class="fa fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">प्रदेश १</a>
+                                <a href="#">प्रदेश २</a>
+                                <a href="#">प्रदेश ३</a> 
+                                <a href="#">प्रदेश ४</a>
+                                <a href="#">प्रदेश ५</a>
+                                <a href="#">प्रदेश ६</a> 
+                                <a href="#">प्रदेश ७</a> 
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">बिजनेश पाटी</a>
+                        </li>
+                        <li>
+                            <a href="#">मनोरन्जन</a>
+                        </li>
+                        <li>
+                            <a href="#">विचार</a>
+                        </li>
+                        <li>
+                            <a href="#">प्रवास</a>
+                        </li>
+                        <li class="others">
+                            <a href="" class="dropbtn" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                थप <i class="fa fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                            </div>
+                        </li>
+                        <li class="nav-right">
+                            <a href="" class="donate" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                डोनेशन
+                                <span>
+                                    <i class="fa fa-heart ms-1"></i>
+                                </span>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">सामना मिडिया डोनेशन</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    
+   
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+    <!-- province news start -->
+    <section class="province-wise">
+        <div class="hero-element">
+            <div class="hero-text">
+                <h3>प्रदेश  विशेष</h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="main-province">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="left-wrap news-card">
+                            <div class="top-header">
+                                <h3 class="title-head">
+                                    <a href="">मुख्य समाचार</a>
+                                </h3>
+                                <div class="see-more">
+                                    <a href="">+ थप</a>
+                                </div>
+                            </div>
+                            <div class="img-wrapper text-center">
+                                <img src="./assets/img/naresh-shrestha.jpg.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="bottom_heading text-center">
+                                <h3><a href="">वडाध्यक्ष भएपछि पाएकाे पाँच लाख सेवासुविधा सामाजिक कार्यमा खर्चिने घोषणा</a></h3>
+                            </div>
+                            <div class="bottom-para">
+                                <p>मङ्सिर ५, इलाम । इलाम नगरपालिका–७ का वडाध्यक्ष नरेश श्रेष्ठले वडाध्यक्षमा निर्वाचित भएपछि हालसम्म प्राप्त गरेको सेवा सुविधा बापतकाे रकम सामाजिक कार्यमा खर्चिने घोषणा गरेका छन् । इलामको गजुुरमुखीमा आइतबार आयाेजित पत्रकार सम्मेलनमा उनले हालसम्म कानुन बमोजिम प्राप्त गरेको रकम सामाजिक कार्यमा खर्चिने घोषणा गरेका हुन् । उनले नगरपालिकाबाट अहिलेसम्म सेवा सुविधा बापत पाँच लाख […]
+                                </p>
+                            </div>
+                            <div class="bottom-card">
+                                <div class="bottom_wrap">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="card">
+                                                <img src="./assets/img/card-img.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <a href=""><h5 class="card-title"> भारतले पेट्रोल र डिजेलको मूल्य घटाएर पठायो</h5></a>
+                                                  <p class="card-text">
+                                                      मङ्सिर १७, काठमाडौं । भारतीय आयल कर्पोरेसनले नेपाल आयल निगमलाई पेट्रोलियम पदार्थमा मूल्य घटाएर पठाए […].
+                                                  </p>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="card">
+                                                <img src="./assets/img/card-img.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <a href=""><h5 class="card-title"> भारतले पेट्रोल र डिजेलको मूल्य घटाएर पठायो</h5></a>
+                                                  <p class="card-text">
+                                                      मङ्सिर १७, काठमाडौं । भारतीय आयल कर्पोरेसनले नेपाल आयल निगमलाई पेट्रोलियम पदार्थमा मूल्य घटाएर पठाए […].
+                                                  </p>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="card">
+                                                <img src="./assets/img/card-img.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <a href=""><h5 class="card-title"> भारतले पेट्रोल र डिजेलको मूल्य घटाएर पठायो</h5></a>
+                                                  <p class="card-text">
+                                                      मङ्सिर १७, काठमाडौं । भारतीय आयल कर्पोरेसनले नेपाल आयल निगमलाई पेट्रोलियम पदार्थमा मूल्य घटाएर पठाए […].
+                                                  </p>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="right-wrapper-category">
+                            <div class="latest-update news-card">
+                                <div class="top-header">
+                                    <h3 class="title-head">
+                                        <a href="">ताजा अपडेट</a>
+                                    </h3>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-star"></i>
+                                    <p>
+                                        <a href="">
+                                            यस्तो छ बुधबारको विनिमय दर [सुचीसहित]
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-star"></i>
+                                    <p>
+                                        <a href="">
+                                            ओली संसद् अवरोध गरेर देशलाई अस्थिरतातर्फ धकेल्ने दूस्प्रयास गर्दैछन्: पाैडेल ध गरेर देशलाई अस्थिरतातर्फ
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-star"></i>
+                                    <p>
+                                        <a href="">
+                                            यस्तो छ बुधबारको विनिमय दर [सुचीसहित]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="top-ads">
+                                <div class="row text-center">
+                                    <div class="col-lg-12 col mb-3">
+                                        <a href="">
+                                            <img src="./assets/img/ad-sidebar-1.jpg" class="img-fluid" alt="ads">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-12 col mb-3">
+                                        <a href="">
+                                            <img src="./assets/img/ad-sidebar-1.jpg" class="img-fluid" alt="ads">
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="most-view news-card">
+                                <div class="top-header">
+                                    <h3 class="title-head">
+                                        <a href="">धेरै पढिएको</a>
+                                    </h3>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-heart"></i>
+                                    <p>
+                                        <a href="">
+                                            यस्तो छ बुधबारको विनिमय दर [सुचीसहित] रेर देशलाई अस्थिरतातर्फ धकेल्ने दूस्प्रयास गर्दैछन्: पाैडेल ध गरेर
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-heart"></i>
+                                    <p>
+                                        <a href="">
+                                            यस्तो छ बुधबारको विनिमय दर [सुचीसहित]
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="sidebarNews">
+                                    <i class="fa fa-heart"></i>
+                                    <p>
+                                        <a href="">
+                                            यस्तो छ बुधबारको विनिमय दर [सुचीसहित]रेर देशलाई अस्थिरतातर्फ धकेल्ने दूस्प्रयास गर्दैछन्: पाैडेल ध गरेर
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- advt section -->
+            <div class="banner-ad">
+                <div class="container-fluid text-center">
+                    <a href="">
+                        <img src="./assets/img/ad-2.gif" class="img-fluid" alt="Banner-Ad">
+                    </a>
+                </div>
+            </div>
+            <!-- Category -->
+            <div class="category">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="news-card">
+                                <div class="left-card">
+                                    <div class="top-header">
+                                        <h3 class="title-head">
+                                            <a href="">शिक्षा</a>
+                                        </h3>
+                                        <div class="see-more">
+                                            <a href="">+ थप</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="wrap-img text-center">
+                                            <img src="./assets/img/bhuwan-siha-limbu-800x400.jpg" alt="category-wise" class="img-fluid" height="250px">
+                                            <h3>
+                                                <a href="">मतदाता नामावलीमा तपाईको नाम छ वा छैन ? यसरि हेर्नुहोस</a>
+                                            </h3>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-card">
+                                <div class="left-card">
+                                    <div class="top-header">
+                                        <h3 class="title-head">
+                                            <a href="">स्वास्थ्य</a>
+                                        </h3>
+                                        <div class="see-more">
+                                            <a href="">+ थप</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="wrap-img text-center">
+                                            <img src="./assets/img/bhuwan-siha-limbu-800x400.jpg" alt="category-wise" class="img-fluid" height="250px">
+                                            <h3>
+                                                <a href="">मतदाता नामावलीमा तपाईको नाम छ वा छैन ? यसरि हेर्नुहोस</a>
+                                            </h3>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-card">
+                                <div class="left-card">
+                                    <div class="top-header">
+                                        <h3 class="title-head">
+                                            <a href="">कृषि</a>
+                                        </h3>
+                                        <div class="see-more">
+                                            <a href="">+ थप</a>
+                                        </div>
+                                    </div>
+                                    <div class="main-content">
+                                        <div class="wrap-img text-center">
+                                            <img src="./assets/img/bhuwan-siha-limbu-800x400.jpg" alt="category-wise" class="img-fluid" height="250px">
+                                            <h3><a href="">मतदाता नामावलीमा तपाईको नाम छ वा छैन ? यसरि हेर्नुहोस</a></h3>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                        <div class="side-news mt-3">
+                                            <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                            <div class="side-right">
+                                                <h5>
+                                                    <a href="">
+                                                        माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                    </a>
+                                                </h5>
+                                                <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="economic">
+                    <div class="news-card">
+                        <div class="top-header">
+                            <h3 class="title-head">
+                                <a href="">आर्थिक</a>
+                            </h3>
+                            <div class="see-more">
+                                <a href="">+ थप</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/ad-sidebar-1.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/ad-sidebar-1.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/ad-sidebar-1.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/card-img.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/ad-sidebar-1.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="./assets/img/card-img.jpg" class="card-img-top" alt="headline-news">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title"> काँग्रेस महामन्त्रीमा तीन डाक्टर : तीन लोकप्रिय नेता आमने सामने !</h5> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-ad">
+                <div class="container-fluid text-center">
+                    <a href="">
+                        <img src="./assets/img/ad-2.gif" class="img-fluid" alt="Banner-Ad">
+                    </a>
+                </div>
+            </div>
+            <div class="sports">
+                <div class="container-fluid">
+                    <div class="news-card">
+                        <div class="top-header">
+                            <h3 class="title-head">
+                                <a href="">खेलकुद</a>
+                            </h3>
+                            <div class="see-more">
+                                <a href="">+ थप</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="left-sideMenu">
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="middle">
+                                    <div class="card">
+                                        <img src="./assets/img/naresh-shrestha.jpg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">
+                                              <a href="">पहिलो टी-२० मा वेस्टइण्डिजलाई पाकिस्तानले हरायो </a>
+                                            </h5>
+                                          <p class="card-text">
+                                                पाकिस्तानले पहिलो टी–२० क्रिकेट खेलमा वेस्टइन्डिजलाई पराजित गरेको छ । घरेलु मैदान 
+                                                कराँचीमा ६३ रनको जितसँगै पाकिस्तानले तीन टी-२० को शृंखलामा १-० को अग्रता बनाएको हो 
+                                          </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="right-sideMenu">
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                    <div class="side-news">
+                                        <img src="./assets/img/biplab-nekapa-oklhaldhunga-150x150.jpg" alt="">
+                                        <div class="side-right">
+                                            <h5>
+                                                <a href="">
+                                                    माओवादी प्रदेश अधिवेशन : सुदूरपश्चिममा सकेसम्म सहमतिमै नेतृत्व चयन 
+                                                </a>
+                                            </h5>
+                                            <p><i class="fa fa-clock me-1"></i>९ मिनेट अघि</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- province news end -->
+    <!-- footer starts -->
+    <footer>
+        <div class="top-section container d-flex justify-content-between align-items-baseline">            
+            <div class="logo-sec">
+                <a href="/">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="social-sec">
+                <ul class="d-flex">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-sec">
+                <ul class="d-flex">
+                    <li>
+                        <a href="">हाम्रो बारेमा</a>
+                    </li>
+                    <li>
+                        <a href="">हाम्रो टिम</a>
+                    </li>
+                    <li>
+                        <a href="">विज्ञापन बारे</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mid-section">
+            <div class="wrap-mid container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 left-sec">
+                        <ul>
+                            <li><h5>सामना मिडिया प्रालि</h5></li>
+                            <li>
+                                <span><i class="fa fa-map-marker-alt me-2"></i></span>
+                                ठेगाना: अनामनगर काठमाडौँ, नेपाल
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone me-2"></i></span>
+                                मोबाइल: ९८४१५८४२४५/ ९८४३०६७०९९
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope me-2"></i></span>
+                                ई-मेल: <a href="">postpati3@gmail.com</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone me-2"></i></span>
+                                सूचना विभाग दर्ता नं: ८८३/०७५-०७६
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 left-mid-sec">
+                        <ul>
+                            
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                सम्पादक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                सह सम्पादक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-6 mid-sec remove-footer">
+                        <ul>
+                            
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-6 right-sec remove-footer">
+                        <ul>
+                            
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="">समाचार</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section container d-flex justify-content-between align-items-baseline">
+            <p>© २०१३-२०२१ samana.com सर्वाधिकार सुरक्षित</p>
+            <p>Powered By : <a href="">Medmax Innovation</a> </p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+    
+    <!-- scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

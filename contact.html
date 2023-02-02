@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/scss/style.css">
+        <title>News-app</title>
+    </head>
+<body>
+    <!-- header starts -->
+    <header>
+        <div class="top-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="wrap-date">
+                            <p>आइतबार २६ मंसिर, २०७८</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="wrap-search">
+                            <input type="text" placeholder="खोज्नुहोस" alt="माफ गर्नुहोस तपाइले खोजेको नतिजा हामीले फेला पार्न सकेनौ">
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="wrap-social">
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-id">
+            <div class="mid-section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="wrap-logo text-center">
+                            <a href="/"> <img src="./assets/img/logo.png" width="180" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-sm-6 col-6">
+                        <div class="wrap-toggler" style="display: none;">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                              
+                            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                        <i class="fa fa-bars me-2"></i>मेनु 
+                                    </h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/" class="nav-link"><i class="fa fa-home"></i>
+                                                गृहपृष्ठ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">समाचार</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">राजनीति</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                प्रदेश
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश १</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश २</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश ३</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश ४</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश ५</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश ६</a></li>
+                                                <li><a class="dropdown-item" href="./province-wise.html">प्रदेश ७</a></li>
+                                              </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">बिजनेश पाटी</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">मनोरन्जन</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">विचार</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link">प्रवास</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                थप
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                                <li><a class="dropdown-item" href="#">मनोरन्जन</a></li>
+                                              </ul>
+                                        </li>
+                                        <!-- <li class="nav-right">
+                                            <a href="#" class="nav-link">
+                                                डोनेशन<i class="fa fa-heart ms-1"></i>
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="wrap-ad text-center">
+                            <a href="">
+                                <img src="./assets/img/ad-top.gif" class="img-fluid" alt="Ad">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="wrap-bottom">
+                    <ul>
+                        <li>
+                            <a href="/"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="./category-wise.html">समाचार</a>
+                        </li>
+                        <li>
+                            <a href="#">राजनीति</a>
+                        </li>
+                        <li class="others">
+                            <a href="" class="dropbtn" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                प्रदेश <i class="fa fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="./province-wise.html">प्रदेश १</a>
+                                <a href="./province-wise.html">प्रदेश २</a>
+                                <a href="./province-wise.html">प्रदेश ३</a> 
+                                <a href="./province-wise.html">प्रदेश ४</a>
+                                <a href="./province-wise.html">प्रदेश ५</a>
+                                <a href="./province-wise.html">प्रदेश ६</a> 
+                                <a href="./province-wise.html">प्रदेश ७</a> 
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">बिजनेश पाटी</a>
+                        </li>
+                        <li>
+                            <a href="#">मनोरन्जन</a>
+                        </li>
+                        <li>
+                            <a href="#">विचार</a>
+                        </li>
+                        <li>
+                            <a href="#">प्रवास</a>
+                        </li>
+                        <li class="others">
+                            <a href="" class="dropbtn" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                थप <i class="fa fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                                <a href="#">बिजनेश पाटी</a>
+                            </div>
+                        </li>
+                        <li class="nav-right">
+                            <a href="" class="donate" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                डोनेशन
+                                <span>
+                                    <i class="fa fa-heart ms-1"></i>
+                                </span>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">सामना मिडिया डोनेशन</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    
+   
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+    <!-- Start Contact -->
+    <section class="contact-main">
+        <div class="contact-wrap container news-card">
+            <div class="top-header">
+                <h3 class="title-head">
+                    <a href="">हामीलाई सम्पर्क गर्नुहोस</a>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5081886596345!2d85.37859991487115!3d27.701591582794318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b23c5f323b7%3A0x266b72152bb76934!2sMedmax%20Innovation%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1639631641838!5m2!1sen!2snp"  height="450" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                    <div class="form-section">
+                        <div class="top-header mt-3">
+                            <h3 class="title-head">
+                                <a href="">सम्पर्कमा रहनुहोस्</a>
+                            </h3>
+                        </div>
+                        <div class="form-group">
+                           <form action="">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <textarea name="" id=""  rows="8" placeholder="प्रतिक्रिया
+                                        "></textarea>
+                                    </div>
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="नाम" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="इमेल" aria-label="Last name">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="विषय" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 mt-4">
+                                <button class="send-btn" type="submit">पठाउनुहोस्
+                                </button>
+                                </div>
+                           </form>
+    
+                        </div>
+
+                        
+                       
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    <!-- footer starts -->
+    <footer>
+        <div class="top-section container d-flex justify-content-between align-items-baseline">            
+            <div class="logo-sec">
+                <a href="/">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="social-sec">
+                <ul class="d-flex">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-sec">
+                <ul class="d-flex">
+                    <li>
+                        <a href="">हाम्रो बारेमा</a>
+                    </li>
+                    <li>
+                        <a href="">हाम्रो टिम</a>
+                    </li>
+                    <li>
+                        <a href="">विज्ञापन बारे</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mid-section">
+            <div class="wrap-mid container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 left-sec">
+                        <ul>
+                            <li><h5>सामना मिडिया प्रालि</h5></li>
+                            <li>
+                                <span><i class="fa fa-map-marker-alt me-2"></i></span>
+                                ठेगाना: अनामनगर काठमाडौँ, नेपाल
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone me-2"></i></span>
+                                मोबाइल: ९८४१५८४२४५/ ९८४३०६७०९९
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope me-2"></i></span>
+                                ई-मेल: <a href="">postpati3@gmail.com</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone me-2"></i></span>
+                                सूचना विभाग दर्ता नं: ८८३/०७५-०७६
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 left-mid-sec">
+                        <ul>
+                            
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                सम्पादक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                सह सम्पादक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                            <li>
+                                <span><i class="fa fa-user me-2"></i></span>
+                                संचालक: केवी गुरुङ
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-6 mid-sec remove-footer">
+                        <ul>
+                            
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-6 right-sec remove-footer">
+                        <ul>
+                            
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                            <li>
+                                <a href="./category-wise.html">समाचार</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section container d-flex justify-content-between align-items-baseline">
+            <p>© २०१३-२०२१ samana.com सर्वाधिकार सुरक्षित</p>
+            <p>Powered By : <a href="">Medmax Innovation</a> </p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+    
+    <!-- scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

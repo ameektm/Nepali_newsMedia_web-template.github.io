@@ -1,0 +1,156 @@
+header{
+    background-color: $primaryColor;
+    .top-section{
+        padding: 10px 0;
+        color: white;
+        .wrap-date{
+            text-align: center;
+            font-weight: 700;
+        }
+        .wrap-search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $primaryColor;
+            input{
+                border: none;
+                width: 100%;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+            a{
+                padding: 5px;
+                background-color: $shadePrimary;
+                color: black;
+            }
+        }
+        .wrap-social{
+            ul{
+                display: flex;
+                justify-content: center;
+                li{
+                    margin: 0 10px;
+                    a{
+                        font-size: 25px;
+                        color: white;
+                        &:hover{
+                            
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mid-section{
+        background-color: $shadePrimary;
+        padding: 10px 12px;
+        .wrap-logo{
+            margin-top: 10px;
+        }
+        .wrap-toggler{
+            .offcanvas{
+                .offcanvas-header{
+                    background-color: $primaryColor;
+                    color: white;
+                }
+                .offcanvas-body{
+                    color: white;
+                    background-color: $shadePrimary;
+                    ul{
+                        text-align: left;
+                        li{
+                            margin: 10px 0;
+                            .nav-link{
+                                color: white;
+                                background-color: $primaryColor;
+                                &:hover{
+                                    background-color: $secondaryColor;
+                                    color: black;
+                                }
+                            }
+                        }
+                        .nav-right{
+                            .nav-link{
+                                color: white;
+                                background-color: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-section{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .wrap-bottom{
+            margin: 0 5%;
+            ul{
+                display: flex;
+                li{
+                    margin: 0 20px;
+                    padding: 10px 0;
+                    a{
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        &:hover{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+                .others{
+                    position: relative;
+                    &:hover .dropdown-content {
+                        display: block;
+                    }
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: $primaryColor;
+                        min-width: 200px;
+                        max-height: 350px;
+                        overflow-y: auto;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        a {
+                            color: white;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                            transition: 0.3s ease-in-out;
+                            &:hover{
+                                background-color: rgb(226, 226, 226);
+                                color: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+                .nav-right{
+                    margin: auto;
+                    position: relative;
+                    .donate {
+                        background: $secondaryColor;
+                        background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
+                                    -webkit-linear-gradient(left, lighten($secondaryColor, 15%) 0%, $secondaryColor 50%, lighten($secondaryColor, 15%) 100%);
+                        background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
+                                    linear-gradient(to right, lighten($secondaryColor, 15%) 0%, $secondaryColor 50%, lighten($secondaryColor, 15%) 100%);
+                        background-position: 0 0;
+                        background-size: 200% 100%;
+                        border-radius: 4px;
+                        color: white;
+                        padding: 10px;
+                        text-shadow: 1px 1px 5px #666;
+                        -webkit-transition: all 800ms;
+                        transition: all 0.3s ease-in-out; 
+                        &:hover {
+                          background-position: -100% 0;
+                          color: $shadePrimary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
